@@ -29,8 +29,10 @@ Generate all API versions currently shipped for this package
 ```yaml $(multiapi) && $(track2)
 clear-output-folder: true
 batch:
-  - tag: package-2020-10
-  - tag: package-2020-05-preview
+  - tag: package-2021-05-01-preview-only
+  - tag: package-2021-04-only
+  - tag: package-2020-10-only
+  - tag: package-2020-05-preview-only
   - tag: package-2020-01-01-preview-only
   - tag: package-2019-11-01-preview-only
   - tag: package-2019-10-17-preview-only
@@ -59,23 +61,42 @@ output-folder: $(python-sdks-folder)/monitor/azure-mgmt-monitor/azure/mgmt/monit
 clear-output-folder: false
 perform-load: false
 ```
+### Tag: package-2021-05-01-preview-only and python
 
-### Tag: package-2020-10 and python
-
-These settings apply only when `--tag=package-2020-10 --python` is specified on the command line.
+These settings apply only when `--tag=package-2021-05-01-preview-only --python` is specified on the command line.
 Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
 
-``` yaml $(tag) == 'package-2020-10'
+``` yaml $(tag) == 'package-2021-05-01-preview-only'
+namespace: $(python-base-namespace).v2021_05_01_preview
+output-folder: $(python-sdks-folder)/$(python-base-folder)/v2021_05_01_preview
+```
+
+### Tag: package-2021-04-only and python
+
+These settings apply only when `--tag=package-2021-04-only --python` is specified on the command line.
+Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
+
+``` yaml $(tag) == 'package-2021-04-only'
+namespace: $(python-base-namespace).v2021_04_01
+output-folder: $(python-sdks-folder)/$(python-base-folder)/v2021_04_01
+```
+
+### Tag: package-2020-10-only and python
+
+These settings apply only when `--tag=package-2020-10-only --python` is specified on the command line.
+Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
+
+``` yaml $(tag) == 'package-2020-10-only'
 namespace: $(python-base-namespace).v2020_10_01
 output-folder: $(python-sdks-folder)/$(python-base-folder)/v2020_10_01
 ```
 
-### Tag: package-2020-05-preview and python
+### Tag: package-2020-05-preview-only and python
 
-These settings apply only when `--tag=package-2020-05-preview --python` is specified on the command line.
+These settings apply only when `--tag=package-2020-05-preview-only --python` is specified on the command line.
 Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
 
-``` yaml $(tag) == 'package-2020-05-preview'
+``` yaml $(tag) == 'package-2020-05-preview-only'
 namespace: $(python-base-namespace).v2020_05_01_preview
 output-folder: $(python-sdks-folder)/$(python-base-folder)/v2020_05_01_preview
 ```
