@@ -76,7 +76,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         },
@@ -127,7 +127,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -173,7 +173,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -231,7 +231,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -282,7 +282,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         },
@@ -336,7 +336,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -385,7 +385,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -443,7 +443,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -526,12 +526,12 @@
           "type": "string"
         },
         "createdBy": {
-          "$ref": "#/definitions/UserInfo",
+          "$ref": "../../../common/1.0/types.json#/definitions/UserInfo",
           "description": "Describes a user that created the watchlist",
           "type": "object"
         },
         "updatedBy": {
-          "$ref": "#/definitions/UserInfo",
+          "$ref": "../../../common/1.0/types.json#/definitions/UserInfo",
           "description": "Describes a user that updated the watchlist",
           "type": "object"
         },
@@ -664,12 +664,12 @@
           "type": "string"
         },
         "createdBy": {
-          "$ref": "#/definitions/UserInfo",
+          "$ref": "../../../common/1.0/types.json#/definitions/UserInfo",
           "description": "Describes a user that created the watchlist item",
           "type": "object"
         },
         "updatedBy": {
-          "$ref": "#/definitions/UserInfo",
+          "$ref": "../../../common/1.0/types.json#/definitions/UserInfo",
           "description": "Describes a user that updated the watchlist item",
           "type": "object"
         },
@@ -687,41 +687,9 @@
       ],
       "type": "object"
     },
-    "UserInfo": {
-      "description": "User information that made some action",
-      "properties": {
-        "email": {
-          "description": "The email of the user.",
-          "readOnly": true,
-          "type": "string"
-        },
-        "name": {
-          "description": "The name of the user.",
-          "readOnly": true,
-          "type": "string"
-        },
-        "objectId": {
-          "description": "The object id of the user.",
-          "format": "uuid",
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
     "Label": {
       "description": "Label that will be used to tag and filter on.",
       "type": "string"
-    },
-    "CloudError": {
-      "x-ms-external": true,
-      "properties": {
-        "error": {
-          "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/ErrorResponse",
-          "description": "The error object of the CloudError response"
-        }
-      },
-      "description": "An error response for a resource management request."
     }
   },
   "parameters": {

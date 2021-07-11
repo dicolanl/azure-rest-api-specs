@@ -70,7 +70,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         },
@@ -124,7 +124,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -182,7 +182,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -225,7 +225,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -270,7 +270,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         },
@@ -321,7 +321,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -376,7 +376,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -422,7 +422,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -464,7 +464,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         },
@@ -512,7 +512,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "SecurityInsights.json#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -521,6 +521,7 @@
   },
   "definitions": {
     "ActionsList": {
+      "type":"object",
       "description": "List all the actions.",
       "properties": {
         "nextLink": {
@@ -543,7 +544,7 @@
     "ActionRequest": {
       "allOf": [
         {
-          "$ref": "SecurityInsights.json#/definitions/ResourceWithEtag"
+          "$ref": "../../../common/1.0/types.json#/definitions/ResourceWithEtag"
         }
       ],
       "description": "Action for alert rule.",
@@ -577,7 +578,7 @@
     "ActionResponse": {
       "allOf": [
         {
-          "$ref": "SecurityInsights.json#/definitions/Resource"
+          "$ref": "../../../common/1.0/types.json#/definitions/Resource"
         }
       ],
       "description": "Action for alert rule.",
@@ -625,7 +626,7 @@
     "AlertRule": {
       "allOf": [
         {
-          "$ref": "SecurityInsights.json#/definitions/ResourceWithEtag"
+          "$ref": "../../../common/1.0/types.json#/definitions/ResourceWithEtag"
         }
       ],
       "description": "Alert rule.",
@@ -668,7 +669,7 @@
     "AlertRuleTemplate": {
       "allOf": [
         {
-          "$ref": "SecurityInsights.json#/definitions/Resource"
+          "$ref": "../../../common/1.0/types.json#/definitions/Resource"
         }
       ],
       "description": "Alert rule template.",
@@ -744,6 +745,7 @@
       }
     },
     "AlertRulesList": {
+      "type":"object",
       "description": "List all the alert rules.",
       "properties": {
         "nextLink": {
@@ -764,6 +766,7 @@
       ]
     },
     "AlertRuleTemplatesList": {
+      "type":"object",
       "description": "List all the alert rule templates.",
       "properties": {
         "nextLink": {

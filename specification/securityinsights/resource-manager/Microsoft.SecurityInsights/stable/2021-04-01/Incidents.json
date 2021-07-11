@@ -82,7 +82,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         },
@@ -130,7 +130,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -182,7 +182,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -225,7 +225,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -270,7 +270,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -315,7 +315,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -372,7 +372,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         },
@@ -424,7 +424,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -479,7 +479,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -525,7 +525,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -570,7 +570,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -627,7 +627,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         },
@@ -679,7 +679,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -734,7 +734,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -780,7 +780,7 @@
           "default": {
             "description": "Error response describing why the operation failed.",
             "schema": {
-              "$ref": "#/definitions/CloudError"
+              "$ref": "../../../common/1.0/types.json#/definitions/CloudError"
             }
           }
         }
@@ -1035,16 +1035,6 @@
         }
       },
       "type": "object"
-    },
-    "CloudError": {
-      "x-ms-external": true,
-      "properties": {
-        "error": {
-          "$ref": "../../../../../common-types/resource-management/v1/types.json#/definitions/ErrorResponse",
-          "description": "The error object of the CloudError response"
-        }
-      },
-      "description": "An error response for a resource management request."
     },
     "DnsEntity": {
       "allOf": [
@@ -1584,7 +1574,7 @@
           "type": "string"
         },
         "createdBy": {
-          "$ref": "#/definitions/UserInfo",
+          "$ref": "../../../common/1.0/types.json#/definitions/UserInfo",
           "description": "Describes a user that created the bookmark",
           "type": "object"
         },
@@ -1622,7 +1612,7 @@
           "type": "string"
         },
         "updatedBy": {
-          "$ref": "#/definitions/UserInfo",
+          "$ref": "../../../common/1.0/types.json#/definitions/UserInfo",
           "description": "Describes a user that updated the bookmark",
           "type": "object"
         },
@@ -1696,6 +1686,7 @@
       "type": "object"
     },
     "IncidentAlertList": {
+      "type":"object",
       "description": "List of incident alerts.",
       "properties": {
         "value": {
@@ -1711,6 +1702,7 @@
       ]
     },
     "IncidentBookmarkList": {
+      "type":"object",
       "description": "List of incident bookmarks.",
       "properties": {
         "value": {
@@ -1742,6 +1734,7 @@
       "type": "object"
     },
     "IncidentCommentList": {
+      "type":"object",
       "description": "List of incident comments.",
       "properties": {
         "nextLink": {
@@ -1793,6 +1786,7 @@
       "type": "object"
     },
     "IncidentEntitiesResponse": {
+      "type":"object",
       "description": "The incident related entities response.",
       "properties": {
         "entities": {
@@ -1922,6 +1916,7 @@
       "type": "object"
     },
     "IncidentList": {
+      "type":"object",
       "description": "List all the incidents.",
       "properties": {
         "nextLink": {
@@ -3145,6 +3140,7 @@
       }
     },
     "RelationList": {
+      "type":"object",
       "description": "List of relations.",
       "properties": {
         "nextLink": {
@@ -3728,28 +3724,6 @@
           "description": "A full URL the entity points to",
           "readOnly": true,
           "type": "string"
-        }
-      },
-      "type": "object"
-    },
-    "UserInfo": {
-      "description": "User information that made some action",
-      "properties": {
-        "email": {
-          "description": "The email of the user.",
-          "readOnly": true,
-          "type": "string"
-        },
-        "name": {
-          "description": "The name of the user.",
-          "readOnly": true,
-          "type": "string"
-        },
-        "objectId": {
-          "description": "The object id of the user.",
-          "format": "uuid",
-          "type": "string",
-          "x-nullable": true
         }
       },
       "type": "object"
