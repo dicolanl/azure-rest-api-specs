@@ -235,6 +235,9 @@
           "x-ms-client-flatten": true
         }
       },
+      "required": [
+        "properties"
+      ],
       "type": "object"
     },
     "BookmarkList": {
